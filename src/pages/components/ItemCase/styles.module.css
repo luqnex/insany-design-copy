@@ -1,0 +1,66 @@
+.container {
+    width: 100%;
+    min-height: 953px;
+    display: flex;
+
+    position: sticky;
+    top: 0;
+}
+
+.left {
+    width: 60%;
+    padding: 5rem 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: var(--black-color);
+}
+
+.number {
+    font-weight: 600;
+}
+
+.containerChips {
+    display: flex;
+    gap: 1rem;
+}
+
+.chips {
+    padding: 0.563rem 1.5rem;
+    border: 1px solid var(--white-color);
+    border-radius: 25px;
+    font-size: 1.125rem;
+}
+
+.title {
+    font-size: 3.75rem;
+    font-weight: 600;
+}
+
+.description {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.right {
+    width: 40%;
+    background-color: white;
+    color: black;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

@@ -10,6 +10,7 @@
   --white-color: #FFF;
   --black-color: #000;
   --gray-color: #4F4F50;
+  --border-color: rgba(255,255,255,.4);
 
   color: #FFF;
   background-color: #000;
