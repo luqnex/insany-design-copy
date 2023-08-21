@@ -1,0 +1,55 @@
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    background-color: var(--black-color);
+
+    height: 80px;
+}
+
+.containerLogo {
+    width: 75%;
+    height: 100%;
+    border-bottom: 1px solid var(--gray-color); 
+    border-right: 1px solid var(--gray-color);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 4rem;
+}
+
+.containerSocial {
+    display: flex;
+    gap: 2rem;
+    font-size: 1.8rem;
+}
+
+.containerNav {
+    width: 25%;
+    height: 100%;
+    border-bottom: 1px solid var(--gray-color); 
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4rem;
+}
+
+.containerLanguage {
+    display: flex;
+}
+
+.language {
+    font-size: 0.75rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.textNav {
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
