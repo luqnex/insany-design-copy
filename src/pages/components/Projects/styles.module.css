@@ -5,7 +5,7 @@
 
 .containerLeft {
     width: 60%;
-    padding: 10rem 4rem 10rem;
+    padding: 8rem 4rem 8rem;
     border-right: 1px solid var(--border-color);
 
     display: flex;
@@ -22,7 +22,7 @@
 
 .title {
     max-width: 40%;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 .description {
@@ -34,24 +34,11 @@
 .iconArrow {
     font-size: 2rem;
     margin-bottom: 2rem;
-
-    /* position: absolute;
-    bottom: 0;
-    animation: moveUpDown 1.5s infinite alternate; */
 }
-
-/* @keyframes moveUpDown {
-    0% {
-      top: 0;
-    }
-    100% {
-      top: 10px;
-    }
-} */
 
 .divAbsolute {
     width: 100%;
-    height: 132px;
+    height: 6rem;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -91,4 +78,53 @@
     font-size: 1.125rem;
     font-weight: 600;
     text-decoration: underline;
+}
+
+@media screen and (max-width: 1400px) {
+    .containerLeft {
+        padding: 4rem;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .divAbsolute {
+        height: 4rem;
+    }
+
+    .containerRight {
+        padding: 4rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .containerLeft {
+        width: 100%;
+        border: none;
+        padding: 3rem 1rem;
+        gap: 3rem;
+    }
+
+    .containerTitle {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .containerRight {
+        display: none;
+    }
+
+    .title, .description{
+        max-width: 100%;
+    }
+
+    .divAbsolute {
+        height: 3rem;
+        width: 90%;
+    }
 }

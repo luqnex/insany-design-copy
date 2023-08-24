@@ -1,11 +1,11 @@
 .header {
     width: 100%;
+    height: 5rem;
     display: flex;
     align-items: center;
-
     background-color: var(--black-color);
-
-    height: 80px;
+    position: fixed;
+    z-index: 9999;
 }
 
 .containerLogo {
@@ -24,7 +24,7 @@
 .containerSocial {
     display: flex;
     gap: 2rem;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 }
 
 .containerNav {
@@ -51,5 +51,56 @@
 .textNav {
     font-size: 0.875rem;
     font-weight: 600;
+}
+
+.menu {
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 1400px) {
+    .header {
+        height: 4rem;
+    }
+
+    .containerSocial {
+        font-size: 1rem;
+    }
+
+    .containerNav {
+        padding: 0 2rem;
+    }
+
+    .language {
+        font-size: 0.8rem;
+    }
+
+    .textNav {
+        display: none;
+    }
+    
+    .menu {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .containerLogo {
+        width: 60%;
+        padding: 0 1rem;
+        border-right: none;
+    }
+
+    .containerSocial  {
+        display: none;
+    }
+
+    .containerNav {
+        width: 40%;
+        padding: 0 1rem;
+    }
+
+    .language {
+        font-size: 0.5rem;
+    }
 }
 

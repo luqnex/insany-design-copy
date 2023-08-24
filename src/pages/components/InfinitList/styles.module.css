@@ -1,0 +1,56 @@
+.container {
+    width: 100%;
+    height: 6rem;
+    position: relative;
+    z-index: 99;
+    background-color: var(--secondary-color);
+    border-bottom: 1px solid var(--border-color);
+
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.infiniteScrollY {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.item {
+    display: flex;
+    gap: 2rem;
+    animation: animate 20s linear 0s infinite none running;
+} 
+
+.containerText {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.image {
+    width: 0.7rem;
+}
+
+.text {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* animations */
+@keyframes animate {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%); 
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .container {
+        height: 4rem;
+    }
+}
+

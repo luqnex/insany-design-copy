@@ -81,10 +81,8 @@ export const HeroSection = () => {
           </div>
         </div>
         <div className={styles.secondary}>
-          <div className={styles.circle}>
-            <img src="./assets/txt-ester-egg.svg" alt="" />
-            <div className={styles.pinkSquare}></div>
-          </div>
+          <img src="./assets/txt-ester-egg.svg" alt="ester egg" />
+          <div className={styles.pinkSquare}></div>
         </div>
       </div>
     </main>

@@ -25,7 +25,7 @@ export const Header = () => {
           </span>
         </div>
         <p className={styles.textNav}>NAVEGUE</p>
-        <RxHamburgerMenu size={32} />
+        <RxHamburgerMenu className={styles.menu} />
       </div>
     </header>
   );
