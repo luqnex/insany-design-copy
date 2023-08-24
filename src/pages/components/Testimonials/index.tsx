@@ -8,7 +8,7 @@ enum EPages {
   TWO = 2,
 }
 
-export const Testimonials = () => {
+export default function Testimonials() {
   const [page, setPage] = useState(EPages.ONE);
 
   const handlePrevAndNextPage = (value: "increment" | "decrement") => {
@@ -121,4 +121,4 @@ export const Testimonials = () => {
       </div>
     </div>
   );
-};
+}

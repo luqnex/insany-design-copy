@@ -6,7 +6,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 
 import styles from "./styles.module.css";
 
-export const Header = () => {
+export default function Header() {
   return (
     <header className={styles.header}>
       <div className={styles.containerLogo}>
@@ -29,4 +29,4 @@ export const Header = () => {
       </div>
     </header>
   );
-};
+}

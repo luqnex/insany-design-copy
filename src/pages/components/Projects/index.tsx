@@ -4,7 +4,7 @@ import { BsArrowDown } from "react-icons/bs";
 
 import styles from "./styles.module.css";
 
-export const Projects = () => {
+export default function Projects() {
   return (
     <div className={styles.container}>
       <div className={styles.containerLeft}>
@@ -32,4 +32,4 @@ export const Projects = () => {
       </div>
     </div>
   );
-};
+}

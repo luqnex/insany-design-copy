@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import styles from "./styles.module.css";
 
-export const InfinityList = () => {
+export default function InfinityList() {
   return (
     <div className={styles.container}>
       <div className={styles.infiniteScrollY}>
@@ -106,4 +106,4 @@ export const InfinityList = () => {
       </div>
     </div>
   );
-};
+}

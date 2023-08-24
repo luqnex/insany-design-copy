@@ -13,7 +13,7 @@ enum EMouseEnter {
 
 type TIsMouseEnter = EMouseEnter;
 
-export const HeroSection = () => {
+export default function HeroSection() {
   const [isMouseEnter, setIsMouseEnter] = useState<TIsMouseEnter>(
     EMouseEnter.POINT_ONE
   );
@@ -87,4 +87,4 @@ export const HeroSection = () => {
       </div>
     </main>
   );
-};
+}

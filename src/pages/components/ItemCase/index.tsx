@@ -17,7 +17,7 @@ interface IItemCaseProps {
   image: string;
 }
 
-export const ItemCase = ({
+export default function ItemCase({
   logo,
   title,
   image,
@@ -25,14 +25,14 @@ export const ItemCase = ({
   number,
   services,
   description,
-}: IItemCaseProps) => {
+}: IItemCaseProps) {
   return (
     <div className={styles.container}>
       <div className={styles.left}>
         <p className={styles.number}>{number}</p>
         <img src={logo} alt="Logo" />
         <div className={styles.containerChips}>
-          {services.map((item) => (
+          {services?.map((item) => (
             <span key={item} className={styles.chips}>
               {item}
             </span>
@@ -41,7 +41,7 @@ export const ItemCase = ({
         <h3 className={styles.title}>{title}</h3>
         <p className={styles.description}>{description}</p>
         <ul className={styles.list}>
-          {links.map((item) => (
+          {links?.map((item) => (
             <li key={item.link} className={styles.link}>
               {item.name}
             </li>
@@ -54,4 +54,4 @@ export const ItemCase = ({
       />
     </div>
   );
-};
+}

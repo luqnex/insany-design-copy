@@ -1,9 +1,9 @@
-import { Header } from "./components/Header";
-import { HeroSection } from "./components/HeroSection";
-import { InfinityList } from "./components/InfinitList";
-import { ItemCase } from "./components/ItemCase";
-import { Projects } from "./components/Projects";
-import { Testimonials } from "./components/Testimonials";
+import Header from "./components/Header";
+import HeroSection from "./components/HeroSection";
+import InfinityList from "./components/InfinitList";
+import ItemCase from "./components/ItemCase";
+import Projects from "./components/Projects";
+import Testimonials from "./components/Testimonials";
 
 export default function Home() {
   return (
