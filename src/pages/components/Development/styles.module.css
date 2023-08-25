@@ -1,0 +1,238 @@
+.container {
+    background-color: var(--secondary-color);
+    display: flex;
+
+    position: relative;
+    z-index: 99;
+}
+
+.left {
+    width: 60%;
+    height: 100%;
+    border-right: 1px solid var(--border-color);
+    padding: 8rem 4rem 8rem 0;
+
+    display: flex;
+    justify-content: center;
+}
+
+.containerImages {
+    position: relative;
+    width: 628px;
+    height: 485px;
+
+    display: flex;
+
+    background-color: var(--secondary-color);
+}
+
+.desktop {
+    width: 100%;
+    height: 100%;
+    background-image: url("../../../../public/assets/desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0 2rem 0;
+    border-radius: 12px;
+    transition: .4s ease;
+}
+
+.mobile {
+    width: 261px;
+    height: 483px;
+    background-color: var(--secondary-color);
+    background-image: url("../../../../public/assets/mobile.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0 2rem 0;
+    border-radius: 12px;
+
+    position: absolute;
+    top: -4rem;
+    right: -6rem;
+
+    z-index: 1;
+    transition: .4s ease;
+}
+
+.desktop:hover, .mobile:hover {
+    background-color: var(--secondary-color-hover);
+    cursor: pointer;
+    transition: .4s ease;
+}
+
+.number {
+    font-weight: 600;
+}
+
+.title {
+    max-width: 30%;
+    font-size: 1.5rem;
+    line-height: 1.2;
+}
+
+.description {
+    max-width: 30%;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+.titleMobile {
+    max-width: 70%;
+    font-size: 1.5rem;
+    line-height: 1.2;
+}
+
+.descriptionMobile {
+    max-width: 80%;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+.arrow {
+    font-size: 0.8rem;
+    margin-top: 2rem;
+}
+
+.right {
+    width: 40%;
+    padding: 4rem 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    transition: 0.3s all;
+}
+
+.icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.titleRight {
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.descriptionRight {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-top: 1.5rem;
+}
+
+.containerMouseText {
+    display: flex;
+    align-items: flex-start;
+    gap: .7rem;
+    margin-top: 2rem;
+}
+
+.iconMouse {
+    font-size: 1.5rem;
+}
+
+.mouseTextRight {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 1400px) {
+    .containerImages {
+        width: 450px;
+        height: 350px;
+    }
+
+    .mobile {
+        width: 200px;
+        height: 370px;
+    }
+
+    .number {
+        font-size: 1rem;
+    }
+    
+    .title {
+        max-width: 70%;
+        font-size: 1rem;
+    }
+    
+    .description {
+        max-width: 70%;
+        font-size: 0.8rem;
+    }
+    
+    .titleMobile {
+        font-size: 1rem;
+        max-width: 100%;
+    }
+    
+    .descriptionMobile {
+        max-width: 100%;
+        font-size: 0.8rem;
+    }
+
+    .right {
+        padding: 4rem 6rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .left {
+        width: 100%;
+        border: none;
+        padding: 1rem 0 1rem 1rem;
+        justify-content: flex-start;
+    }
+
+    .containerImages {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        gap: 2rem;
+        overflow: hidden;
+    }
+
+    .desktop {
+        width: 628px;
+        height: 400px;
+        position: initial;
+    }
+
+    .title {
+        max-width: 30%;
+        font-size: 1.2rem;
+    }
+    
+    .description {
+        max-width: 40%;
+        font-size: 1rem;
+    }
+
+    .mobile {
+        width: 261px;
+        height: 483px;
+        position: initial;
+    }
+
+    .titleMobile {
+        font-size: 1.2rem;
+    }
+    
+    .descriptionMobile {
+       font-size: 1rem;
+    }
+
+    .right {
+        display: none;
+    }
+}

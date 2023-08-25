@@ -1,0 +1,142 @@
+.container {
+    background-color: var(--secondary-color);
+    display: flex;
+
+    position: relative;
+    z-index: 99;
+
+    border-bottom: 1px solid var(--border-color);
+}
+
+.containerLeft {
+    width: 60%;
+    padding: 8rem 4rem 8rem;
+    border-right: 1px solid var(--border-color);
+
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+
+    position: relative;
+}
+
+.containerTitle {
+    display: flex;
+    gap: 7rem;
+}
+
+.title {
+    max-width: 40%;
+    font-size: 3rem;
+}
+
+.description {
+    max-width: 34%;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.iconArrow {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.divAbsolute {
+    width: 100%;
+    height: 6rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    background-image: url("../../../../public/assets/gradient-red.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.containerRight {
+    width: 40%;
+    padding: 10rem 4rem 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.right {
+    max-width: 30rem;
+}
+
+.containerLink {
+    padding-left: 3rem;
+    margin-top: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.titleLink {
+    font-size: 2rem;
+}
+
+.link {
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1400px) {
+    .containerLeft {
+        padding: 4rem;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .divAbsolute {
+        height: 4rem;
+    }
+
+    .containerRight {
+        padding: 4rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        border: none;
+    }
+
+    .containerLeft {
+        width: 100%;
+        border: none;
+        padding: 3rem 1rem;
+        gap: 3rem;
+    }
+
+    .containerTitle {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .containerRight {
+        display: none;
+    }
+
+    .title, .description{
+        max-width: 100%;
+    }
+
+    .iconArrow {
+        display: none;
+    }
+
+    .divAbsolute {
+        display: none;
+    }
+}
